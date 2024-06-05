@@ -1,6 +1,6 @@
 # Importation des bibliotheques necessaires
 import requests  # Pour envoyer des requetes HTTP
-from bs4 import BeautifulSoup  # pour analyser le HTML
+from beautifulsoup4 import BeautifulSoup  # pour analyser le HTML
 import pandas as pd  # pour manipuler les donnees sous forme de tableaux
 import re  # pour le nettoyage des donnees avec des expressions regulieres
 import numpy as np  # pour les operations mathematiques et le traitement des donnees manquantes
