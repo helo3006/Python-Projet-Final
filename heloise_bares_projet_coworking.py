@@ -13,8 +13,6 @@ from streamlit_folium import folium_static  # pour afficher des cartes Folium da
 import time  # pour gerer les delais et les temps d'attente
 import matplotlib.pyplot as plt  # pour creer des graphiques
 
-
-
 # Fonction pour nettoyer les numeros de téléphone
 def nettoyer_tel(tel):
     if tel:  # Vérifier si le numéro de téléphone n'est pas vide
@@ -68,8 +66,6 @@ url_traitees = set()  # Initialiser un ensemble vide
 donnees = []  # Initialiser une liste vide
 
 
-
-
 # Pour chaque lien trouvé, accéder à la page et extraire les informations
 for lien in liens:
     url = lien.get('href')  # Récupérer l'URL du lien
@@ -98,8 +94,6 @@ for lien in liens:
 
 # Convertir en DataFrame
 df = pd.DataFrame(donnees)  # Convertir la liste de données en DataFrame
-
-
 
 
 # Utiliser l'API Nominatim pour obtenir les coordonnées géographiques
@@ -131,13 +125,6 @@ df.to_excel("coworking_paris.xlsx", index=False)  # Enregistrer le DataFrame dan
 print(df)  # Afficher le DataFrame sur le terminal 
 
 
-
-
-
-
-
-
-
 # Charger les données
 df2 = pd.read_excel("coworking_paris.xlsx")  # Charger le fichier Excel
 
@@ -158,10 +145,6 @@ if not df2.empty:
     # Afficher la carte dans Streamlit
     st.title("Espaces de Coworking à Paris")  # Titre de l'application
     folium_static(m)  # Afficher la carte
-
-
-
-
     
 
     # Ajout de visualisations des données
