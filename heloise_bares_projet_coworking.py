@@ -80,7 +80,7 @@ for lien in liens:
         tel = extract_info('Téléphone', page_soup)  # Extraire le téléphone
 
         # Nettoyer les données
-        title = nettoyer_nom(titre)  # Nettoyer le nom
+        titre = nettoyer_nom(titre)  # Nettoyer le nom
         adresse = nettoyer_adresse(adresse)  # Nettoyer l'adresse
         tel = nettoyer_tel(tel)  # Nettoyer le téléphone
 
