@@ -122,7 +122,7 @@ df.drop(columns=['Adresse complète', 'Localisation'], inplace=True)  # Supprime
 df.to_excel("coworking_paris.xlsx", index=False)  # Enregistrer le DataFrame dans un fichier Excel
 
 
-print(df)  # Afficher le DataFrame sur le terminal 
+#print(df) Afficher le DataFrame sur le terminal 
 
 
 # Charger les données
