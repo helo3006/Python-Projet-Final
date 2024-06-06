@@ -7,4 +7,4 @@ folium
 streamlit
 matplotlib
 openpyxl
-streamlit_folium==0.7.1
+streamlit_folium==0.20.0
